@@ -1,5 +1,6 @@
-# # 生成md格式api文档
-## install
+# 生成md格式api文档
+
+## install
 
 brew tap cn100800/markdown-api/markdown-api
 
