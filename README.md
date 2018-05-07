@@ -1,6 +1,6 @@
-# 生成md格式api文档
+#生成md格式api文档
 
-## install
+##install
 
 brew tap cn100800/markdown-api/markdown-api
 
@@ -10,7 +10,7 @@ or
 
 go get github.com/cn100800/homebrew-markdown-api
 
-## use
+##use
 
 ```shell
 Usage of markdown:
