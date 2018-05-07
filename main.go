@@ -16,7 +16,7 @@ var (
 func main() {
 	//p := fmt.Println
 	// -u -m -t
-	//
+	f := flag.String("f", "", "file name")
 	t := flag.String("t", "api title", "api title")
 	m := flag.String("m", "request method", "request method")
 	flag.StringVar(&u, "u", "request url", "request url")
@@ -47,5 +47,10 @@ func main() {
 	//os.OpenFile("test.md", os.O_APPEND|os.O_CREATE|os.O_RDWR, 777)
 	t_now := time.Now()
 	file_name := []byte(t_now.Format(time.RFC3339))[0:10]
-	ioutil.WriteFile("/Users/cn/Desktop/"+string(file_name)+".md", []byte(hearder), 0777)
+	//fmt.Println(hearder)
+	if *f == "" {
+		ioutil.WriteFile("/Users/cn/Desktop/"+string(file_name)+".md", []byte(hearder), 0777)
+	} else {
+		ioutil.WriteFile("/Users/cn/apidoc/"+*f+".md", []byte(hearder), 0777)
+	}
 }
