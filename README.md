@@ -23,6 +23,3 @@ Usage of markdown:
   -u string
     	request url (default "request url")
 ```
-
-
-
