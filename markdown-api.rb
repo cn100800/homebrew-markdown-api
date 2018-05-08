@@ -4,8 +4,8 @@
 class MarkdownApi < Formula
   desc "markdown-api-desc"
   homepage "https://github.com/cn100800/markdown-api/releases/latest"
-  url "https://github.com/cn100800/markdown-api/releases/download/0.0.2/markdown-api.zip"
-  version "0.0.2"
+  url "https://github.com/cn100800/markdown-api/releases/download/2018.05.08.release/markdown-api.zip"
+  version "2018.05.08.release"
   sha256 ""
   # depends_on "cmake" => :build
 
