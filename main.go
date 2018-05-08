@@ -4,6 +4,7 @@ import (
 	"flag"
 	"fmt"
 	"io/ioutil"
+	"markdown/version"
 	"net/url"
 	"time"
 )
@@ -18,9 +19,13 @@ func main() {
 	// -u -m -t
 	f := flag.String("f", "", "file name")
 	t := flag.String("t", "api title", "api title")
-	m := flag.String("m", "request method", "request method")
+	m := flag.String("m", "request method", "request `method`")
 	flag.StringVar(&u, "u", "request url", "request url")
+	v := flag.Bool("v", false, "version")
 	flag.Parse()
+	if *v {
+		version.GetVersion()
+	}
 	// if *m == "" {
 	// 	fmt.Println("enter method :")
 	// 	fmt.Scanln(m)
