@@ -2,13 +2,22 @@
 
 ## install
 
+```shell
 brew tap cn100800/markdown-api/markdown-api
-
 brew install cn100800/markdown-api/markdown-api
+```
 
 or
 
+```shell
 go get github.com/cn100800/homebrew-markdown-api
+```
+
+if  faild , you can use 
+
+```shell
+go get -u github.com/cn100800/homebrew-markdown-api/...
+```
 
 ## use
 
